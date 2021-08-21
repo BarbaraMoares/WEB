@@ -31,7 +31,7 @@ public class ServletQualMeuNome extends HttpServlet {
 		PrintWriter saida = response.getWriter();
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
-		saida.write("<HEAD><TITLE>Pergunta</TITLE><HEAD>");
+		saida.write("<HEAD><TITLE>Pergunta</TITLE></HEAD>");
 		out.println("<body>");
 		out.println("<a href=\"ServletMeuNome\">Qual o meu nome?</a>");
 		out.println("</body>");
