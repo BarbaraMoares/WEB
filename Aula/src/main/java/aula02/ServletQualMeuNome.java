@@ -21,22 +21,21 @@ public class ServletQualMeuNome extends HttpServlet {
      */
     public ServletQualMeuNome() {
         super();
-        // TODO Auto-generated constructor stub --println
+        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter saida = response.getWriter();
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
-		saida.write("<HEAD><TITLE>Pergunta</TITLE></HEAD>");
+		out.println("<head><title>Pergunta</title></head>");
 		out.println("<body>");
 		out.println("<a href=\"ServletMeuNome\">Qual o meu nome?</a>");
 		out.println("</body>");
 		out.println("</html>");
-		saida.close();
+		out.close();
 	}
 
 }

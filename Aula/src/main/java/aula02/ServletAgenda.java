@@ -29,12 +29,16 @@ public class ServletAgenda extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		
 		PrintWriter writer = response.getWriter();
 		
-		writer.write("<HEAD><TITLE>CADASTRADO</TITLE></HEAD>");
+		writer.println("<html>");
+		writer.println("<head><title>CADASTRADO</title></head>");
+		
+		writer.println("<body>");
 		
 		writer.println("<h1>CADASTRO CONCLUIDO</h1>");
 		
@@ -47,6 +51,9 @@ public class ServletAgenda extends HttpServlet {
 		writer.println("<li>Telefone: " + phone + "</li>"); 
 		writer.println("<li>Data de Nascimento: " + data + "</li>"); 
 		writer.println("</ul>");
+		
+		writer.println("</body></html>");
+		writer.close();
 	}
 
 }

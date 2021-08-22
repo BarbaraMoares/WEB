@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ServletPaginaAgenda
+   Servlet implementation class ServletPaginaAgenda
  */
 @WebServlet(name = "ServletFormulario", urlPatterns = { "/ServletFormulario" })
 public class ServletPaginaAgenda extends HttpServlet {
@@ -28,10 +28,9 @@ public class ServletPaginaAgenda extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter saida = response.getWriter();
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
-		saida.write("<HEAD><meta charset=\"UTF-8\"><TITLE>Formulario</TITLE></HEAD>");
+		out.println("<head><meta charset=\"UTF-8\"><title>Formulario</title></head>");
 		out.println("<body>");
 		out.println("<fieldset>");
 		out.println("<legend>CADASTRO</legend><br/>");
@@ -54,6 +53,6 @@ public class ServletPaginaAgenda extends HttpServlet {
 		out.println("</fieldset>");
 		out.println("</body>");
 		out.println("</html>");
-		saida.close();
+		out.close();
 	}
 }
