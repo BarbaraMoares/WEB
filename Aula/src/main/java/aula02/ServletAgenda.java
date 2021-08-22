@@ -32,7 +32,11 @@ public class ServletAgenda extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		
-		PrintWriter writer = response.getWriter(); writer.println("<h1>CADASTRO CONCLUIDO</h1>");
+		PrintWriter writer = response.getWriter();
+		
+		writer.write("<HEAD><TITLE>CADASTRADO</TITLE></HEAD>");
+		
+		writer.println("<h1>CADASTRO CONCLUIDO</h1>");
 		
 		String nome = request.getParameter("nome");
 		String phone = request.getParameter("phone");
