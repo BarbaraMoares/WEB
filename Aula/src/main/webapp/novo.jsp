@@ -7,6 +7,6 @@
 		<title>RITUALDEV</title>
 	</head>
 	<body>
-		<p><h3>HELLO WORLD!</h3></p>
+		<h3>HELLO WORLD!</h3>
 	</body>
 </html>
